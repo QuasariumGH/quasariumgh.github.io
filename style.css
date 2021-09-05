@@ -1,0 +1,50 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.HeaderSection{
+    font-family: Nunito;
+    height: 50vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HeaderSmall{
+    font-family: Nunito;
+    font-size: 1.5em;
+}
+ .HeaderMedium{
+    font-family: Rubik;
+    font-size: 3.5em;
+}
+.HeaderLarge{
+    font-family: Rubik;
+    font-size: 6em;
+}
+.TopLayout{
+    text-align: right;
+    margin-right: 3em;
+    margin-top: 2em;
+    height: 20vh;
+}
+.TopLinks{
+    font-family: Nunito;
+    font-size: 1.5em;
+    padding-left: 2em;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+}
+.Centered{
+    margin: 0 auto;
+}
+a:link{
+    color:black;
+}
+a:hover{
+    color:rgb(255, 0, 0);
+}
