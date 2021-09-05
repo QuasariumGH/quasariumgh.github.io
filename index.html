@@ -1,48 +1,82 @@
 
 <!DOCTYPE html>
+
 <html lang = "en">
     <title>Digital Portfolio - Dillon Jones</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
     <style>
+        *, *:before, *:after{
+        box-sizing: border-box;
+        }
+        *{
+        margin: 0;
+        padding: 0;
+        }
         .NameHeaderSection{
             font-family: Rubik;
-            margin-top: 350px; /*Distance between NameHeader and top of screen*/
+            height: 50vh;
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
         }
         .NameSmall{
-            font-size:30pt;
-            padding-right: 240pt; /*Offset  from center */
-            margin-top: 0px;
-            margin-bottom: 0px
+            font-size: 3em;
         }
         .NameLarge{
-            font-size:70pt;
-            margin-top: 0px;
-            margin-bottom: 0px;
+            font-size: 5.5em;
         }
         .NameInfo{
-            font-family:Nunito;
-            font-size: 20pt;
-            text-align: center;
-            margin-top: 30px; /* Distance between nameSmall and nameLarge*/
-            margin-bottom: 0px;
+            font-family: Nunito;
+            font-size: 1.6em;
+            
         }
         .TopLayout{
-            font-family:Nunito;
+            text-align: right;
+            margin-right: 3em;
+            margin-top: 2em;
+            height: 20vh;
         }
-        body{
-            text-align: center;
+        .TopLinks{
+            font-family: Nunito;
+            font-size: 1em;
+            padding-left: 2em;
+            display:inline-block;
+            text-decoration:none;
+            color:black;
         }
-       
+        .Centered{
+            margin: 0 auto;
+        }
+        .AboutMe{ 
+            color:black;
+            background-color:rgb(65, 65, 65);
+            text-align:center;
+        }
+        a:link{
+            color:black;
+        }
+        a:hover{
+            color:rgb(31, 118, 218);
+        }
     </style>
-        <body>
-            <div class ="TopLayout">
-                <p> </p>
+    <body>
+        <div class="TopLayout"> 
+            <a href="index.html" class="TopLinks">Home</a>
+            <a href="Background.html"class="TopLinks">Background</a>
+            <a href="Projects.html"class="TopLinks">Projects</a>
+            <a href="Inquiries.html"class="TopLinks">Inqueries</a>
+            <a href="index.html"class="TopLinks">Resume</a>
+        </div>
+        <div class="NameHeaderSection">
+            <div class="Centered">
+                <p class="NameSmall">My Name is</p>
+                <h2 class="NameLarge">Dillon Jones.</h2>
+                <p class="NameInfo">Im a software developer and music producer studying at High Tech High North County.</p>
             </div>
-            <div class="NameHeaderSection">
-                <h1 class="NameSmall">My Name is</h1>
-                <h1 class="NameLarge">Dillon Jones.</h1>
+        </div class="AboutMe">
+            <div>
             </div>
-            <p class="NameInfo">Im a software developer and music producer studying at High Tech High North County.</p>
-        </body>
+    </body>
 </html>
