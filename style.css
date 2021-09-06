@@ -12,17 +12,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 28vh;
 }
 .HeaderSmall{
-    font-family: Nunito;
     font-size: 1.5em;
 }
  .HeaderMedium{
-    font-family: Rubik;
     font-size: 3.5em;
 }
 .HeaderLarge{
-    font-family: Rubik;
     font-size: 6em;
 }
 .TopLayout{
@@ -39,8 +37,19 @@
     text-decoration: none;
     color:black;
 }
-.Centered{
-    margin: 0 auto;
+.BackgroundBox{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+}
+.AboutMe{
+    font-family: Nunito;
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 a:link{
     color:black;
