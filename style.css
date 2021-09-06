@@ -9,44 +9,62 @@
     position: absolute;
     top:100%;
 }
-.HeaderSection{
-    font-family: Nunito;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 28vh;
-}
-.HeaderSmall{
-    font-size: 1.5em;
-}
- .HeaderMedium{
-    font-size: 3.5em;
-}
-.HeaderLarge{
-    font-size: 6em;
-}
-.TopLayout{
-    height: 20vh;
-    margin-right: 3%;
-    margin-top: 2%;
+.right{
     text-align: right;
 }
-.TopLinks{
-    font-family: Nunito;
-    font-size: 1.5em;
-    color:black;
+.left{
+    text-align: left;
+}
+.HeaderSmall{
+    font-size: 1.2em;
+}
+ .HeaderMedium{
+    font-size: 3.0em;
+}
+.HeaderLarge{
+    font-size: 5em;
+}
+.Menu{
+    margin-top: 2%;
+}
+.TextLayout{
+    margin-top: 2%;
+    margin-right: 3%;
+    height: 0px;
+}
+.ImageLayout{
+    
     padding-left: 2%;
+    padding-left: 3%;
+    height: 0px;
+}
+.ImageLink{
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    display: inline-block;
+}
+.TextLink{
+    font-family: Nunito;
+    font-size: 1em;
+    color:black;
+    padding-left: 1%;
+    padding-right: 1%;
     display: inline-block;
     text-decoration: none;
+}
+.HeaderSection{
+    font-family: Nunito;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 88vh;
 }
 .BackgroundBox{
     width: 100%;
     height: 100%;
     background-color: rgb(63, 63, 63);
     position: absolute;
-
 }
 .AboutMe{
     height: 40%;
