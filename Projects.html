@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang = "en"></html>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+<html lang = "en">
+    <style>
+        *, *:before, *:after{
+        box-sizing: border-box;
+    }
+    .Description{
+        padding:  2em;
+        color: #EDEDED;
+    }
+    .Embed{
+        padding:  5em;
+        max-width: 1140px;
+        margin: 0  auto;
+    }
+    </style>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
     <body>
-        <div>
+        <div class="FullPage">
             <div class="Menu"> 
                 <div class="TextLayout right">
                     <a href="index.html" class="TextLink">Home</a>
@@ -13,15 +29,22 @@
                     <a href="Inquiries.html"class="TextLink">Inqueries</a>
                     <a href="resume.pdf"class="TextLink">Resume</a>
                 </div>
-                <div class="ImageLayout left"> 
-                    <a href="https://twitter.com/QuasariumTWR"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Twitter.png" width=45em height="auto"  alt="Github Account"></a>
-                    <a href="https://github.com/QuasariumGH"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Github.png" width="45em" height="auto"  alt="Github Account"></a>
-                </div>
             </div>
             <div class="HeaderSection">
-                <h1 class="HeaderLarge">Work In Progress!</h1>
-                <p class="HeaderSmall">Sorry, but this site is still under construction. Come back soon to see more here!</p>
+                <p class="HeaderLarge">Projects</p>
+                <p class="HeaderSmall">Below, is a list of all the projects I have created and have been invloved in over my career. </p>
             </div>
         </div>
+        <div class="BackgroundBox center">
+            <div class="Embed">
+                <iframe frameborder="0" src="https://itch.io/embed/904512?bg_color=2b2b2b&amp;fg_color=EDEDED&amp;link_color=DA0037&amp;border_color=000000" width="552" height="167"><a href="https://progradesoftware.itch.io/sector-0">Sector 0 (Early Access) by Prograde Software</a></iframe>
+                <p class ="Description">You're a test subject, placed in a world where you have to survive against hoards of zombies. You are given 650 dollars to purchase a weapon of your choosing and some ammo. Your goal is to survive as long as you can and to kill as many zombies as possible. The more zombies you kill, the more money you get, so you can obtain new weapons and specialties to use against them. (Keep in mind, this game is still in early development so please report any bugs or glitches  if you can, thanks) This game was made in Unity 2020.2.2f1.</p>
+            </div>
+            <div class="Embed">
+                <iframe frameborder="0" src="https://itch.io/embed/1016620?bg_color=2b2b2b&amp;fg_color=EDEDED&amp;link_color=DA0037&amp;border_color=000000" width="552" height="167"><a href="https://progradesoftware.itch.io/rodirroc">Rodirroc (Ludum Dare 48 Edition) by Prograde Software</a></iframe>
+                <p class ="Description">This game is a Horror game, where your main goal is to collect the 5 Skulls scattered throughout the infinite Corridor. While exploring, you may run into an enemy known as "Baphomet", so be careful he may not be what you seem.</p>
+            </div>
+        </div>
+        <p class="Footer"> © Copyright 2021 - Digital Portfolio - Dillon Jones</p>
     </body>
 </html>

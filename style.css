@@ -5,9 +5,16 @@
     margin: 0;
     padding: 0;
 }
-.body{
-    position: absolute;
-    top:100%;
+
+
+
+body {
+    background-color:#171717;
+    font-family: Nunito;
+}
+
+.FullPage{
+    height: 100vh;
 }
 .right{
     text-align: right;
@@ -15,15 +22,29 @@
 .left{
     text-align: left;
 }
+.center{
+    text-align: center;
+}
 .HeaderSmall{
     font-size: 1.2em;
+    color:#EDEDED;
 }
  .HeaderMedium{
     font-size: 3.0em;
+    color:#EDEDED;
 }
 .HeaderLarge{
     font-size: 5em;
+    color:#EDEDED;
 }
+.Footer{
+ background-color: #EDEDED;
+ padding:  1em;
+ text-align: center;
+ font-size: 1em;
+ opacity: 1;
+}
+
 .Menu{
     margin-top: 2%;
 }
@@ -32,28 +53,23 @@
     margin-right: 3%;
     height: 0px;
 }
-.ImageLayout{
-    
-    padding-left: 2%;
-    padding-left: 3%;
-    height: 0px;
-}
+
 .ImageLink{
     padding-left: 0.5%;
     padding-right: 0.5%;
     display: inline-block;
+    color: #EDEDED;
 }
 .TextLink{
-    font-family: Nunito;
     font-size: 1em;
-    color:black;
-    padding-left: 1%;
-    padding-right: 1%;
+    color: #EDEDED;
+    padding-left: 1em;
+    padding-right: 1em;
     display: inline-block;
     text-decoration: none;
 }
+
 .HeaderSection{
-    font-family: Nunito;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,23 +77,27 @@
     height: 88vh;
 }
 .BackgroundBox{
+    top:100%;
+    color:#171717;
     width: 100%;
     height: 100%;
-    background-color: rgb(63, 63, 63);
-    position: absolute;
+    background-color: #222831;
 }
-.AboutMe{
-    height: 40%;
-    font-family: Nunito;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+
 a:link{
-    color:black;
+    color:#EDEDED;
 }
 a:hover{
-    color:rgb(255, 0, 0);
+    color: #DA0037;
+}
+@keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
 }

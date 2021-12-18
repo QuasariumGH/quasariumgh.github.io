@@ -1,20 +1,69 @@
 <!DOCTYPE html>
-<style>
-    *, *:before, *:after{
-    box-sizing: border-box;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-</style>
 <html lang = "en">
-    <title>Digital Portfolio - Dillon Jones</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        *, *:before, *:after{
+        box-sizing: border-box;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    p{
+        opacity: 0;
+    }
+
+    @keyframes fadeIn
+    {
+        from
+        {
+            opacity: 0;
+        }
+        to
+        {
+            opacity: 1;
+        }
+    }
+
+    .FadeShort
+    {
+        animation:  fadeIn 2s forwards;
+    }
+    .FadeMedium
+    {
+        animation:  fadeIn 2s forwards;
+        animation-delay: 1s;
+    }
+    .FadeLong
+    {
+        animation:  fadeIn 2s forwards;
+        animation-delay: 2s;
+    }
+
+    .ImageLayout{
+        
+        padding-left: 2%;
+        padding-left: 3%;
+        height: 0px;
+    }
+
+    .AboutMe{
+        height: 40%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    </style>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Digital Portfolio - Dillon Jones</title>
+    </head>
     <body>
-        <div>
+        <div class="FullPage">
             <div class="Menu"> 
                 <div class="TextLayout right">
                     <a href="index.html" class="TextLink">Home</a>
@@ -23,24 +72,19 @@
                     <a href="Inquiries.html"class="TextLink">Inqueries</a>
                     <a href="resume.pdf"class="TextLink">Resume</a>
                 </div>
-                <div class="ImageLayout left"> 
-                    <a href="https://twitter.com/QuasariumTWR"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Twitter.png" width=45em height="auto"  alt="Github Account"></a>
-                    <a href="https://github.com/QuasariumGH"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Github.png" width="45em" height="auto"  alt="Github Account"></a>
-                </div>
+            </div>
+            <div class="ImageLayout left"> 
+                <a href="https://twitter.com/QuasariumTWR"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Twitter.png" width=45em height="auto"  alt="Github Account"></a>
+                <a href="https://github.com/QuasariumGH"><img class="ImageLink" href="https://github.com/QuasariumGH" src="Github.png" width="45em" height="auto"  alt="Github Account"></a>
             </div>
             <div class="HeaderSection">
                 <div>
-                    <p class="HeaderMedium">Hi, My Name is</p>
-                    <h1 class="HeaderLarge">Dillon Jones.</h1>
-                    <p class="HeaderSmall">Im a software developer and music producer studying at High Tech High North County.</p>
-                </div>
-            </div>
-            <div class="BackgroundBox body">
-                <div class="AboutMe">
-                    <p style="color: white;" class="HeaderMedium">About Me</p>
-                    <p style="color: white;" class="HeaderSmall">Work In Progress!</p>
+                    <p class="HeaderMedium FadeShort">Hi, My Name is</p>
+                    <p class="HeaderLarge FadeMedium">Dillon Jones.</p>
+                    <p class="HeaderSmall FadeLong">Im a software developer and music producer studying at High Tech High North County.</p>
                 </div>
             </div>
         </div>
+        <p class="Footer"> © Copyright 2021 - Digital Portfolio - Dillon Jones</p>
     </body>
 </html>
