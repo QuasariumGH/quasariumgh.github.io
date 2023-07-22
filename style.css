@@ -83,6 +83,10 @@ body {
     background-color: #222831;
 }
 
+.margined{
+ margin-top: 20px;
+}
+
 a:link{
     color:#EDEDED;
 }
